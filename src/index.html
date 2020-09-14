@@ -32,5 +32,14 @@
 <fw-timepicker min-time="01:39 AM" interval=55> </fw-timepicker>
 <fw-datepicker style="float:left;"></fw-datepicker>
 <fw-datepicker mode="range" style="float:left;margin-left:250px"></fw-datepicker>
+<br>
+<fw-toast content="Successfully triggered"></fw-toast>
+<fw-toast content="error in triggered"></fw-toast>
+<script>
+  window.addEventListener('fwLinkClick', eventHandler);
+  function eventHandler(e) {
+    console.log('action link clicked', e);
+  }
+</script>
 </body>
 </html>
